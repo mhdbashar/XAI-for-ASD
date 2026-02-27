@@ -31,56 +31,35 @@ The Lancet eClinicalMedicine, Aug 2025 - [DOI](https://doi.org/10.1016/j.eclinm.
 	- `EarlyStopping` records and restores the best model state when triggered.
 	- Encoding and fine-tuning stages use explicit encode/decode loaders with early stopping per stage.
 
-## Results
+## Results Comparison: Data Leakage Impact
 
-### Model Performance (Without Data Leakage)
-The following results are from models trained with proper data leakage prevention measures (per-fold feature extraction, RFE, and scaling):
+### With Data Leakage (Previous Model)
 
-| Metric | Mean ± Std |
-|--------|-----------|
+| Metric | Value |
+|--------|-------|
+| Accuracy | 97.68% |
+| Specificity | 0.97 |
+| Precision | 0.97 |
+| F1 Score | 0.98 |
+| Confusion Matrix | [[99.0, 2.8], [2.0, 103.2]] |
+
+**Note:** These artificially inflated results were due to global feature extraction and scaling across train/test splits, leading to information leakage during model evaluation.
+
+### Without Data Leakage (Corrected Model)
+
+| Metric | Value |
+|--------|-------|
 | Accuracy | 65.02% ± 2.51% |
 | Sensitivity | 0.6585 ± 0.0393 |
 | Specificity | 0.6416 ± 0.0503 |
 | Precision | 0.6597 ± 0.0304 |
 | F1 Score | 0.6582 ± 0.0255 |
+| Average Confusion Matrix | [[69.8, 36.2], [36.2, 64.8]] |
 
-### Explainability Results
+**Note:** Results represent mean ± std across 5-fold cross-validation with proper data leakage prevention. Feature extraction and scaling are now performed separately for each fold's training set.
 
-#### CCS Pipeline - Top Important Brain Regions
+### Key Findings
 
-**SHAP Method:**
-- Top: Vermis_9 ↔ Cerebelum_8_L (Cerebellar-sensorimotor function) - Importance: 10.0
-- Angular_R ↔ Angular_L (Complex language processing) - Importance: 7.65
+The 32.66% drop in accuracy (97.68% → 65.02%) demonstrates the critical importance of proper data handling in model evaluation. The corrected model provides conservative but reliable estimates of actual performance, ensuring that reported results reflect true model generalization capabilities rather than artifacts of data processing.
 
-**LIME Method:**
-- Top: Temporal_Sup_R ↔ Thalamus_R (Auditory-sensory relay) - Importance: 10.0
-- Cerebelum_3_L ↔ Temporal_Inf_L (Cerebellar-auditory processing) - Importance: 7.14
-
-**GuidedBackprop Method:**
-- Top: Temporal_Pole_Sup_R ↔ Caudate_L (Emotional-learning) - Importance: 10.0
-- Temporal_Mid_R ↔ Putamen_R (Auditory-movement regulation) - Importance: 7.38
-
-**Integrated Gradients Method:**
-- Top: Frontal_Mid_L ↔ Frontal_Sup_L (Planning-cognition) - Importance: 10.0
-- Occipital_Sup_R ↔ Calcarine_L (Visual processing) - Importance: 8.37
-
-#### DPARSF Pipeline - Top Important Brain Regions
-
-**SHAP Method:**
-- Top: Temporal_Pole_Sup_R ↔ Rolandic_Oper_L (Emotional-sensory integration) - Importance: 10.0
-- Cingulum_Ant_R ↔ Frontal_Mid_Orb_R (Decision-emotion regulation) - Importance: 7.97
-
-**LIME Method:**
-- Top: Temporal_Mid_R ↔ Cuneus_L (Auditory-visual perception) - Importance: 10.0
-- Calcarine_R ↔ Rectus_L (Visual-emotion processing) - Importance: 9.34
-
-**GuidedBackprop Method:**
-- Top: Cerebelum_10_R ↔ Parietal_Inf_R (Cerebellar-perception integration) - Importance: 10.0
-- Temporal_Mid_R ↔ Pallidum_L (Auditory-movement execution) - Importance: 9.44
-
-**Integrated Gradients Method:**
-- Top: Frontal_Mid_L ↔ Frontal_Sup_L (Planning-cognition) - Importance: 10.0
-- Cuneus_L ↔ Calcarine_L (Visual perception) - Importance: 9.88
-
-### Comparison: Data Leakage vs No Leakage
-Models trained with data leakage showed artificially inflated performance (~97-98% accuracy) compared to properly validated models (~65% accuracy), highlighting the critical importance of proper cross-validation methodology in medical imaging studies.
+```
