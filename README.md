@@ -11,3 +11,22 @@ https://arxiv.org/abs/2409.15374
 #### Paper
 
 The Lancet eClinicalMedicine, Aug 2025 - [DOI](https://doi.org/10.1016/j.eclinm.2025.103452)
+
+## Summary of changes
+
+- 2026-02-27 — Commit 9af713d: "leak consider" — noted and considered potential data-leakage issues in preprocessing and model evaluation; follow-up review recommended.
+
+**Details for `app/main.py` (commit 9af713d)**
+
+- Purpose: Address potential data-leakage and numerical-stability issues in training/evaluation.
+- Prevented data leakage:
+	- Feature extraction is performed per cross-validation fold (train vs test) instead of globally.
+	- RFE is fitted only on the training fold via `fit_rfe_on_fold` and applied to validation and test sets.
+	- `StandardScaler` is fit on training features and then applied to validation/test sets.
+	- Validation splits are drawn from the training fold (no use of test data for validation).
+- Numerical stability:
+	- Fisher Z transform clipping added (clip coefficients to ±0.9999) to avoid infinities during transformation.
+- Training/evaluation improvements:
+	- `rfe_step` parameter exposed to configure RFE step-size.
+	- `EarlyStopping` records and restores the best model state when triggered.
+	- Encoding and fine-tuning stages use explicit encode/decode loaders with early stopping per stage.
