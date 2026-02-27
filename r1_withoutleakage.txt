@@ -1,0 +1,1875 @@
+verbose: True
+train_model: True
+save_model: False
+Torch CUDA is available: True
+Total samples loaded: 1035
+Shape of raw data[0] (time points x ROIs): (236, 116)
+======================================
+Split 1
+======================================
+RFE selected 1000 features out of 6670
+Total:  1035
+Train:  703
+Test:  207
+Validation:  125
+AE 1: Epoch 0, loss 211.7136, validation loss 215.7605
+AE 1: Epoch 1, loss 199.9912, validation loss 236.4346
+EarlyStopping counter: 1 out of 10
+AE 1: Epoch 2, loss 177.6122, validation loss 257.4576
+EarlyStopping counter: 2 out of 10
+AE 1: Epoch 3, loss 179.8086, validation loss 277.5353
+EarlyStopping counter: 3 out of 10
+AE 1: Epoch 4, loss 153.6667, validation loss 296.2843
+EarlyStopping counter: 4 out of 10
+AE 1: Epoch 5, loss 165.9262, validation loss 315.4900
+EarlyStopping counter: 5 out of 10
+AE 1: Epoch 6, loss 165.2885, validation loss 333.3741
+EarlyStopping counter: 6 out of 10
+AE 1: Epoch 7, loss 144.4189, validation loss 348.9769
+EarlyStopping counter: 7 out of 10
+AE 1: Epoch 8, loss 170.0787, validation loss 362.0587
+EarlyStopping counter: 8 out of 10
+AE 1: Epoch 9, loss 120.4875, validation loss 373.3495
+EarlyStopping counter: 9 out of 10
+AE 1: Epoch 10, loss 121.4585, validation loss 383.3136
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 1
+======================================
+AE 2: Epoch 0, loss 2.6384, validation loss 2.6975
+AE 2: Epoch 1, loss 0.4170, validation loss 16.6717
+EarlyStopping counter: 1 out of 10
+AE 2: Epoch 2, loss 4.7854, validation loss 19.9523
+EarlyStopping counter: 2 out of 10
+AE 2: Epoch 3, loss 1.7232, validation loss 12.8455
+EarlyStopping counter: 3 out of 10
+AE 2: Epoch 4, loss 1.1490, validation loss 5.8946
+EarlyStopping counter: 4 out of 10
+AE 2: Epoch 5, loss 0.3703, validation loss 3.0157
+EarlyStopping counter: 5 out of 10
+AE 2: Epoch 6, loss 0.4920, validation loss 3.6449
+EarlyStopping counter: 6 out of 10
+AE 2: Epoch 7, loss 0.2382, validation loss 5.5043
+EarlyStopping counter: 7 out of 10
+AE 2: Epoch 8, loss 0.3166, validation loss 6.3179
+EarlyStopping counter: 8 out of 10
+AE 2: Epoch 9, loss 0.2819, validation loss 5.5495
+EarlyStopping counter: 9 out of 10
+AE 2: Epoch 10, loss 0.1487, validation loss 4.9351
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 2
+======================================
+Classifier: Epoch 0, loss 0.6976, validation loss 0.6936
+Classifier: Epoch 1, loss 0.6950, validation loss 0.6917
+Classifier: Epoch 2, loss 0.6972, validation loss 0.6912
+Classifier: Epoch 3, loss 0.6928, validation loss 0.6924
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 4, loss 0.6940, validation loss 0.6932
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 5, loss 0.6970, validation loss 0.6919
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 6, loss 0.6943, validation loss 0.6929
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 7, loss 0.6933, validation loss 0.6934
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 8, loss 0.6944, validation loss 0.6926
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 9, loss 0.6923, validation loss 0.6926
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 10, loss 0.6951, validation loss 0.6923
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 11, loss 0.6933, validation loss 0.6925
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 12, loss 0.6942, validation loss 0.6925
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 13, loss 0.6925, validation loss 0.6930
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 14, loss 0.6934, validation loss 0.6930
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 15, loss 0.6920, validation loss 0.6917
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 16, loss 0.6936, validation loss 0.6914
+EarlyStopping counter: 14 out of 15
+Classifier: Epoch 17, loss 0.6924, validation loss 0.6922
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 17
+======================================
+Trained classifier
+======================================
+Model: Epoch 0, loss 0.6233, val loss 0.6558, train acc 62.02%, val acc 62.40%
+Model: Epoch 1, loss 0.5115, val loss 0.6435, train acc 76.10%, val acc 64.80%
+Model: Epoch 2, loss 0.4508, val loss 0.6445, train acc 82.22%, val acc 64.00%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 3, loss 0.3564, val loss 0.6416, train acc 88.34%, val acc 62.40%
+Model: Epoch 4, loss 0.3193, val loss 0.6490, train acc 91.89%, val acc 64.00%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 5, loss 0.2628, val loss 0.6661, train acc 95.73%, val acc 63.20%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 6, loss 0.2079, val loss 0.6772, train acc 97.58%, val acc 65.60%
+EarlyStopping counter: 3 out of 15
+Model: Epoch 7, loss 0.2206, val loss 0.7055, train acc 99.57%, val acc 65.60%
+EarlyStopping counter: 4 out of 15
+Model: Epoch 8, loss 0.1651, val loss 0.7350, train acc 99.72%, val acc 67.20%
+EarlyStopping counter: 5 out of 15
+Model: Epoch 9, loss 0.1169, val loss 0.7681, train acc 100.00%, val acc 68.00%
+EarlyStopping counter: 6 out of 15
+Model: Epoch 10, loss 0.0907, val loss 0.8091, train acc 100.00%, val acc 68.00%
+EarlyStopping counter: 7 out of 15
+Model: Epoch 11, loss 0.0706, val loss 0.8456, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 8 out of 15
+Model: Epoch 12, loss 0.0595, val loss 0.8853, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 9 out of 15
+Model: Epoch 13, loss 0.0435, val loss 0.9258, train acc 100.00%, val acc 68.00%
+EarlyStopping counter: 10 out of 15
+Model: Epoch 14, loss 0.0398, val loss 0.9639, train acc 100.00%, val acc 67.20%
+EarlyStopping counter: 11 out of 15
+Model: Epoch 15, loss 0.0317, val loss 0.9947, train acc 100.00%, val acc 67.20%
+EarlyStopping counter: 12 out of 15
+Model: Epoch 16, loss 0.0228, val loss 1.0279, train acc 100.00%, val acc 67.20%
+EarlyStopping counter: 13 out of 15
+Model: Epoch 17, loss 0.0211, val loss 1.0589, train acc 100.00%, val acc 67.20%
+EarlyStopping counter: 14 out of 15
+Model: Epoch 18, loss 0.0179, val loss 1.0884, train acc 100.00%, val acc 66.40%
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 18
+======================================
+Fine tuned model
+======================================
+======================================
+Testing Model
+======================================
+Fold 1 Results:
+Accuracy: 61.84%
+Sensitivity: 0.5943
+Specificity: 0.6436
+Precision: 0.6364
+F1_Score: 0.6146
+Confusion Matrix:
+[[63 36]
+ [43 65]]
+======================================
+Split 2
+======================================
+RFE selected 1000 features out of 6670
+Total:  1035
+Train:  703
+Test:  207
+Validation:  125
+AE 1: Epoch 0, loss 214.9264, validation loss 216.5004
+AE 1: Epoch 1, loss 193.2306, validation loss 241.7425
+EarlyStopping counter: 1 out of 10
+AE 1: Epoch 2, loss 188.4740, validation loss 266.8508
+EarlyStopping counter: 2 out of 10
+AE 1: Epoch 3, loss 162.9435, validation loss 289.5198
+EarlyStopping counter: 3 out of 10
+AE 1: Epoch 4, loss 168.7032, validation loss 312.8254
+EarlyStopping counter: 4 out of 10
+AE 1: Epoch 5, loss 145.9770, validation loss 333.6207
+EarlyStopping counter: 5 out of 10
+AE 1: Epoch 6, loss 161.6742, validation loss 353.5091
+EarlyStopping counter: 6 out of 10
+AE 1: Epoch 7, loss 159.5167, validation loss 368.5003
+EarlyStopping counter: 7 out of 10
+AE 1: Epoch 8, loss 147.2764, validation loss 381.4570
+EarlyStopping counter: 8 out of 10
+AE 1: Epoch 9, loss 124.9895, validation loss 392.7737
+EarlyStopping counter: 9 out of 10
+AE 1: Epoch 10, loss 135.0779, validation loss 401.3201
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 1
+======================================
+AE 2: Epoch 0, loss 3.3634, validation loss 2.7836
+AE 2: Epoch 1, loss 1.4367, validation loss 16.6325
+EarlyStopping counter: 1 out of 10
+AE 2: Epoch 2, loss 2.8010, validation loss 19.4526
+EarlyStopping counter: 2 out of 10
+AE 2: Epoch 3, loss 1.6678, validation loss 13.2370
+EarlyStopping counter: 3 out of 10
+AE 2: Epoch 4, loss 1.2904, validation loss 6.4155
+EarlyStopping counter: 4 out of 10
+AE 2: Epoch 5, loss 0.3349, validation loss 3.2645
+EarlyStopping counter: 5 out of 10
+AE 2: Epoch 6, loss 0.4865, validation loss 3.8547
+EarlyStopping counter: 6 out of 10
+AE 2: Epoch 7, loss 0.2742, validation loss 5.6922
+EarlyStopping counter: 7 out of 10
+AE 2: Epoch 8, loss 0.1555, validation loss 6.2911
+EarlyStopping counter: 8 out of 10
+AE 2: Epoch 9, loss 0.1481, validation loss 6.0632
+EarlyStopping counter: 9 out of 10
+AE 2: Epoch 10, loss 0.1847, validation loss 5.4488
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 2
+======================================
+Classifier: Epoch 0, loss 0.6980, validation loss 0.6948
+Classifier: Epoch 1, loss 0.6858, validation loss 0.6952
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 2, loss 0.7079, validation loss 0.6959
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 3, loss 0.6914, validation loss 0.6949
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 4, loss 0.6961, validation loss 0.6946
+Classifier: Epoch 5, loss 0.6925, validation loss 0.6943
+Classifier: Epoch 6, loss 0.6997, validation loss 0.6946
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 7, loss 0.6915, validation loss 0.6946
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 8, loss 0.6951, validation loss 0.6947
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 9, loss 0.6946, validation loss 0.6948
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 10, loss 0.6941, validation loss 0.6947
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 11, loss 0.6918, validation loss 0.6942
+Classifier: Epoch 12, loss 0.6935, validation loss 0.6945
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 13, loss 0.6888, validation loss 0.6942
+Classifier: Epoch 14, loss 0.6846, validation loss 0.6950
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 15, loss 0.6848, validation loss 0.6951
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 16, loss 0.7005, validation loss 0.6948
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 17, loss 0.6977, validation loss 0.6945
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 18, loss 0.6925, validation loss 0.6940
+Classifier: Epoch 19, loss 0.6919, validation loss 0.6941
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 20, loss 0.6918, validation loss 0.6939
+Classifier: Epoch 21, loss 0.6909, validation loss 0.6939
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 22, loss 0.6892, validation loss 0.6942
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 23, loss 0.6942, validation loss 0.6948
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 24, loss 0.6936, validation loss 0.6944
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 25, loss 0.6917, validation loss 0.6941
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 26, loss 0.6927, validation loss 0.6940
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 27, loss 0.6918, validation loss 0.6939
+Classifier: Epoch 28, loss 0.6910, validation loss 0.6939
+Classifier: Epoch 29, loss 0.6875, validation loss 0.6942
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 30, loss 0.6978, validation loss 0.6944
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 31, loss 0.6877, validation loss 0.6940
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 32, loss 0.6902, validation loss 0.6938
+Classifier: Epoch 33, loss 0.6924, validation loss 0.6939
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 34, loss 0.6871, validation loss 0.6936
+Classifier: Epoch 35, loss 0.6909, validation loss 0.6940
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 36, loss 0.6909, validation loss 0.6942
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 37, loss 0.6958, validation loss 0.6940
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 38, loss 0.6904, validation loss 0.6933
+Classifier: Epoch 39, loss 0.6881, validation loss 0.6936
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 40, loss 0.6908, validation loss 0.6937
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 41, loss 0.6911, validation loss 0.6938
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 42, loss 0.6837, validation loss 0.6936
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 43, loss 0.6923, validation loss 0.6942
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 44, loss 0.6810, validation loss 0.6939
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 45, loss 0.6837, validation loss 0.6939
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 46, loss 0.6862, validation loss 0.6936
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 47, loss 0.6955, validation loss 0.6936
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 48, loss 0.6886, validation loss 0.6932
+Classifier: Epoch 49, loss 0.6865, validation loss 0.6931
+Classifier: Epoch 50, loss 0.6896, validation loss 0.6935
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 51, loss 0.6889, validation loss 0.6933
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 52, loss 0.6842, validation loss 0.6934
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 53, loss 0.6845, validation loss 0.6933
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 54, loss 0.6900, validation loss 0.6936
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 55, loss 0.6889, validation loss 0.6935
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 56, loss 0.6877, validation loss 0.6931
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 57, loss 0.6867, validation loss 0.6931
+Classifier: Epoch 58, loss 0.6906, validation loss 0.6934
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 59, loss 0.6885, validation loss 0.6930
+Classifier: Epoch 60, loss 0.6908, validation loss 0.6927
+Classifier: Epoch 61, loss 0.6893, validation loss 0.6928
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 62, loss 0.6830, validation loss 0.6930
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 63, loss 0.6870, validation loss 0.6934
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 64, loss 0.6830, validation loss 0.6936
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 65, loss 0.6857, validation loss 0.6933
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 66, loss 0.6822, validation loss 0.6930
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 67, loss 0.6928, validation loss 0.6928
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 68, loss 0.6843, validation loss 0.6925
+Classifier: Epoch 69, loss 0.6922, validation loss 0.6929
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 70, loss 0.6851, validation loss 0.6929
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 71, loss 0.6832, validation loss 0.6927
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 72, loss 0.6846, validation loss 0.6927
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 73, loss 0.6952, validation loss 0.6929
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 74, loss 0.6917, validation loss 0.6924
+Classifier: Epoch 75, loss 0.6883, validation loss 0.6921
+Classifier: Epoch 76, loss 0.6934, validation loss 0.6926
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 77, loss 0.6824, validation loss 0.6926
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 78, loss 0.6849, validation loss 0.6928
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 79, loss 0.6857, validation loss 0.6927
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 80, loss 0.6903, validation loss 0.6925
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 81, loss 0.6901, validation loss 0.6923
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 82, loss 0.6819, validation loss 0.6921
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 83, loss 0.6821, validation loss 0.6924
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 84, loss 0.6911, validation loss 0.6929
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 85, loss 0.6758, validation loss 0.6925
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 86, loss 0.6779, validation loss 0.6922
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 87, loss 0.6897, validation loss 0.6928
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 88, loss 0.6924, validation loss 0.6926
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 89, loss 0.6875, validation loss 0.6920
+Classifier: Epoch 90, loss 0.6866, validation loss 0.6919
+Classifier: Epoch 91, loss 0.6846, validation loss 0.6916
+Classifier: Epoch 92, loss 0.6830, validation loss 0.6918
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 93, loss 0.6867, validation loss 0.6924
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 94, loss 0.6874, validation loss 0.6921
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 95, loss 0.6819, validation loss 0.6919
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 96, loss 0.6897, validation loss 0.6918
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 97, loss 0.6864, validation loss 0.6919
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 98, loss 0.6803, validation loss 0.6921
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 99, loss 0.6979, validation loss 0.6922
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 100, loss 0.6834, validation loss 0.6918
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 101, loss 0.6878, validation loss 0.6918
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 102, loss 0.6831, validation loss 0.6917
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 103, loss 0.6900, validation loss 0.6917
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 104, loss 0.6814, validation loss 0.6917
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 105, loss 0.6932, validation loss 0.6920
+EarlyStopping counter: 14 out of 15
+Classifier: Epoch 106, loss 0.6771, validation loss 0.6915
+Classifier: Epoch 107, loss 0.6899, validation loss 0.6916
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 108, loss 0.6864, validation loss 0.6913
+Classifier: Epoch 109, loss 0.6808, validation loss 0.6917
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 110, loss 0.6715, validation loss 0.6920
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 111, loss 0.6687, validation loss 0.6929
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 112, loss 0.6837, validation loss 0.6927
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 113, loss 0.6856, validation loss 0.6917
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 114, loss 0.6795, validation loss 0.6913
+Classifier: Epoch 115, loss 0.6806, validation loss 0.6914
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 116, loss 0.6854, validation loss 0.6917
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 117, loss 0.6836, validation loss 0.6915
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 118, loss 0.6871, validation loss 0.6914
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 119, loss 0.6817, validation loss 0.6911
+Classifier: Epoch 120, loss 0.6768, validation loss 0.6913
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 121, loss 0.6967, validation loss 0.6923
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 122, loss 0.6736, validation loss 0.6914
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 123, loss 0.6892, validation loss 0.6915
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 124, loss 0.6748, validation loss 0.6912
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 125, loss 0.6834, validation loss 0.6915
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 126, loss 0.6792, validation loss 0.6912
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 127, loss 0.6779, validation loss 0.6916
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 128, loss 0.6775, validation loss 0.6916
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 129, loss 0.6875, validation loss 0.6917
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 130, loss 0.6923, validation loss 0.6913
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 131, loss 0.6795, validation loss 0.6906
+Classifier: Epoch 132, loss 0.6848, validation loss 0.6907
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 133, loss 0.6812, validation loss 0.6912
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 134, loss 0.6781, validation loss 0.6913
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 135, loss 0.6750, validation loss 0.6913
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 136, loss 0.6822, validation loss 0.6916
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 137, loss 0.6822, validation loss 0.6913
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 138, loss 0.6873, validation loss 0.6912
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 139, loss 0.6813, validation loss 0.6905
+Classifier: Epoch 140, loss 0.6757, validation loss 0.6908
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 141, loss 0.6830, validation loss 0.6906
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 142, loss 0.6782, validation loss 0.6908
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 143, loss 0.6833, validation loss 0.6908
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 144, loss 0.6887, validation loss 0.6913
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 145, loss 0.6885, validation loss 0.6909
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 146, loss 0.6723, validation loss 0.6905
+Classifier: Epoch 147, loss 0.6852, validation loss 0.6907
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 148, loss 0.6808, validation loss 0.6907
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 149, loss 0.6827, validation loss 0.6909
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 150, loss 0.6875, validation loss 0.6910
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 151, loss 0.6834, validation loss 0.6907
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 152, loss 0.6830, validation loss 0.6904
+Classifier: Epoch 153, loss 0.6823, validation loss 0.6900
+Classifier: Epoch 154, loss 0.6875, validation loss 0.6905
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 155, loss 0.6769, validation loss 0.6906
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 156, loss 0.6887, validation loss 0.6908
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 157, loss 0.6860, validation loss 0.6903
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 158, loss 0.6850, validation loss 0.6903
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 159, loss 0.6827, validation loss 0.6905
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 160, loss 0.6737, validation loss 0.6901
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 161, loss 0.6819, validation loss 0.6906
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 162, loss 0.6799, validation loss 0.6905
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 163, loss 0.6686, validation loss 0.6907
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 164, loss 0.6750, validation loss 0.6904
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 165, loss 0.6768, validation loss 0.6904
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 166, loss 0.6829, validation loss 0.6902
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 167, loss 0.6712, validation loss 0.6907
+EarlyStopping counter: 14 out of 15
+Classifier: Epoch 168, loss 0.7032, validation loss 0.6907
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 168
+======================================
+Trained classifier
+======================================
+Model: Epoch 0, loss 0.8064, val loss 0.9641, train acc 62.87%, val acc 65.60%
+Model: Epoch 1, loss 0.4680, val loss 0.6869, train acc 68.42%, val acc 60.80%
+Model: Epoch 2, loss 0.4863, val loss 0.6364, train acc 83.50%, val acc 66.40%
+Model: Epoch 3, loss 0.3049, val loss 0.6211, train acc 87.77%, val acc 64.00%
+Model: Epoch 4, loss 0.2397, val loss 0.6251, train acc 93.88%, val acc 67.20%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 5, loss 0.2155, val loss 0.6379, train acc 96.59%, val acc 70.40%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 6, loss 0.1617, val loss 0.6591, train acc 98.01%, val acc 68.80%
+EarlyStopping counter: 3 out of 15
+Model: Epoch 7, loss 0.1384, val loss 0.6875, train acc 99.29%, val acc 69.60%
+EarlyStopping counter: 4 out of 15
+Model: Epoch 8, loss 0.1076, val loss 0.7080, train acc 99.86%, val acc 68.80%
+EarlyStopping counter: 5 out of 15
+Model: Epoch 9, loss 0.0812, val loss 0.7279, train acc 100.00%, val acc 68.80%
+EarlyStopping counter: 6 out of 15
+Model: Epoch 10, loss 0.0636, val loss 0.7515, train acc 100.00%, val acc 68.80%
+EarlyStopping counter: 7 out of 15
+Model: Epoch 11, loss 0.0680, val loss 0.7704, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 8 out of 15
+Model: Epoch 12, loss 0.0534, val loss 0.7965, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 9 out of 15
+Model: Epoch 13, loss 0.0442, val loss 0.8190, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 10 out of 15
+Model: Epoch 14, loss 0.0390, val loss 0.8404, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 11 out of 15
+Model: Epoch 15, loss 0.0353, val loss 0.8648, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 12 out of 15
+Model: Epoch 16, loss 0.0307, val loss 0.8856, train acc 100.00%, val acc 68.80%
+EarlyStopping counter: 13 out of 15
+Model: Epoch 17, loss 0.0316, val loss 0.9044, train acc 100.00%, val acc 68.80%
+EarlyStopping counter: 14 out of 15
+Model: Epoch 18, loss 0.0238, val loss 0.9217, train acc 100.00%, val acc 69.60%
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 18
+======================================
+Fine tuned model
+======================================
+======================================
+Testing Model
+======================================
+Fold 2 Results:
+Accuracy: 67.63%
+Sensitivity: 0.6887
+Specificity: 0.6634
+Precision: 0.6822
+F1_Score: 0.6854
+Confusion Matrix:
+[[73 34]
+ [33 67]]
+======================================
+Split 3
+======================================
+RFE selected 1000 features out of 6670
+Total:  1035
+Train:  703
+Test:  207
+Validation:  125
+AE 1: Epoch 0, loss 202.1719, validation loss 220.4465
+AE 1: Epoch 1, loss 190.9665, validation loss 251.3060
+EarlyStopping counter: 1 out of 10
+AE 1: Epoch 2, loss 168.8926, validation loss 278.6319
+EarlyStopping counter: 2 out of 10
+AE 1: Epoch 3, loss 174.6386, validation loss 303.7772
+EarlyStopping counter: 3 out of 10
+AE 1: Epoch 4, loss 147.6030, validation loss 323.6234
+EarlyStopping counter: 4 out of 10
+AE 1: Epoch 5, loss 154.7189, validation loss 339.9001
+EarlyStopping counter: 5 out of 10
+AE 1: Epoch 6, loss 136.2319, validation loss 351.7754
+EarlyStopping counter: 6 out of 10
+AE 1: Epoch 7, loss 95.7755, validation loss 359.2685
+EarlyStopping counter: 7 out of 10
+AE 1: Epoch 8, loss 98.3843, validation loss 363.5199
+EarlyStopping counter: 8 out of 10
+AE 1: Epoch 9, loss 100.3781, validation loss 364.4882
+EarlyStopping counter: 9 out of 10
+AE 1: Epoch 10, loss 168.6046, validation loss 362.7664
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 1
+======================================
+AE 2: Epoch 0, loss 4.4736, validation loss 1.8510
+AE 2: Epoch 1, loss 0.3475, validation loss 12.5136
+EarlyStopping counter: 1 out of 10
+AE 2: Epoch 2, loss 2.3289, validation loss 19.8939
+EarlyStopping counter: 2 out of 10
+AE 2: Epoch 3, loss 3.2946, validation loss 21.1273
+EarlyStopping counter: 3 out of 10
+AE 2: Epoch 4, loss 2.6907, validation loss 18.4070
+EarlyStopping counter: 4 out of 10
+AE 2: Epoch 5, loss 0.6870, validation loss 14.0940
+EarlyStopping counter: 5 out of 10
+AE 2: Epoch 6, loss 0.4131, validation loss 10.3873
+EarlyStopping counter: 6 out of 10
+AE 2: Epoch 7, loss 0.3586, validation loss 8.3088
+EarlyStopping counter: 7 out of 10
+AE 2: Epoch 8, loss 0.3444, validation loss 7.7357
+EarlyStopping counter: 8 out of 10
+AE 2: Epoch 9, loss 0.3449, validation loss 8.1482
+EarlyStopping counter: 9 out of 10
+AE 2: Epoch 10, loss 0.2752, validation loss 8.6262
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 2
+======================================
+Classifier: Epoch 0, loss 0.6798, validation loss 0.6892
+Classifier: Epoch 1, loss 0.6937, validation loss 0.6895
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 2, loss 0.6734, validation loss 0.6895
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 3, loss 0.6987, validation loss 0.6888
+Classifier: Epoch 4, loss 0.6852, validation loss 0.6887
+Classifier: Epoch 5, loss 0.6868, validation loss 0.6885
+Classifier: Epoch 6, loss 0.6864, validation loss 0.6883
+Classifier: Epoch 7, loss 0.6943, validation loss 0.6880
+Classifier: Epoch 8, loss 0.6812, validation loss 0.6879
+Classifier: Epoch 9, loss 0.6676, validation loss 0.6877
+Classifier: Epoch 10, loss 0.6912, validation loss 0.6874
+Classifier: Epoch 11, loss 0.6735, validation loss 0.6875
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 12, loss 0.6768, validation loss 0.6874
+Classifier: Epoch 13, loss 0.6830, validation loss 0.6870
+Classifier: Epoch 14, loss 0.7058, validation loss 0.6867
+Classifier: Epoch 15, loss 0.6876, validation loss 0.6868
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 16, loss 0.6871, validation loss 0.6870
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 17, loss 0.6740, validation loss 0.6871
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 18, loss 0.6801, validation loss 0.6866
+Classifier: Epoch 19, loss 0.6780, validation loss 0.6862
+Classifier: Epoch 20, loss 0.6884, validation loss 0.6860
+Classifier: Epoch 21, loss 0.6893, validation loss 0.6864
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 22, loss 0.6882, validation loss 0.6862
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 23, loss 0.6792, validation loss 0.6865
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 24, loss 0.6972, validation loss 0.6864
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 25, loss 0.7061, validation loss 0.6859
+Classifier: Epoch 26, loss 0.6913, validation loss 0.6865
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 27, loss 0.7000, validation loss 0.6862
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 28, loss 0.6743, validation loss 0.6864
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 29, loss 0.7017, validation loss 0.6856
+Classifier: Epoch 30, loss 0.6736, validation loss 0.6859
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 31, loss 0.6994, validation loss 0.6855
+Classifier: Epoch 32, loss 0.6647, validation loss 0.6861
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 33, loss 0.6775, validation loss 0.6856
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 34, loss 0.6809, validation loss 0.6850
+Classifier: Epoch 35, loss 0.6940, validation loss 0.6853
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 36, loss 0.6796, validation loss 0.6867
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 37, loss 0.6958, validation loss 0.6864
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 38, loss 0.6964, validation loss 0.6854
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 39, loss 0.6921, validation loss 0.6855
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 40, loss 0.6824, validation loss 0.6856
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 41, loss 0.6760, validation loss 0.6856
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 42, loss 0.6908, validation loss 0.6843
+Classifier: Epoch 43, loss 0.6726, validation loss 0.6851
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 44, loss 0.6959, validation loss 0.6848
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 45, loss 0.6773, validation loss 0.6853
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 46, loss 0.7036, validation loss 0.6852
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 47, loss 0.6592, validation loss 0.6859
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 48, loss 0.6622, validation loss 0.6855
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 49, loss 0.6594, validation loss 0.6845
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 50, loss 0.6571, validation loss 0.6839
+Classifier: Epoch 51, loss 0.6634, validation loss 0.6844
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 52, loss 0.6909, validation loss 0.6850
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 53, loss 0.6971, validation loss 0.6856
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 54, loss 0.6739, validation loss 0.6865
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 55, loss 0.6890, validation loss 0.6857
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 56, loss 0.6987, validation loss 0.6844
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 57, loss 0.6529, validation loss 0.6849
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 58, loss 0.6567, validation loss 0.6849
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 59, loss 0.6838, validation loss 0.6847
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 60, loss 0.6770, validation loss 0.6843
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 61, loss 0.6959, validation loss 0.6849
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 62, loss 0.6679, validation loss 0.6853
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 63, loss 0.6800, validation loss 0.6847
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 64, loss 0.7249, validation loss 0.6847
+EarlyStopping counter: 14 out of 15
+Classifier: Epoch 65, loss 0.6595, validation loss 0.6855
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 65
+======================================
+Trained classifier
+======================================
+Model: Epoch 0, loss 1.6743, val loss 2.9984, train acc 57.75%, val acc 57.60%
+Model: Epoch 1, loss 0.7593, val loss 1.1327, train acc 61.02%, val acc 58.40%
+Model: Epoch 2, loss 0.9387, val loss 1.0033, train acc 64.58%, val acc 56.00%
+Model: Epoch 3, loss 0.7229, val loss 0.6786, train acc 58.75%, val acc 68.00%
+Model: Epoch 4, loss 0.4112, val loss 0.8952, train acc 78.81%, val acc 60.80%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 5, loss 0.4206, val loss 0.7961, train acc 78.81%, val acc 62.40%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 6, loss 0.3809, val loss 0.6046, train acc 88.90%, val acc 65.60%
+Model: Epoch 7, loss 0.3711, val loss 0.5945, train acc 87.77%, val acc 68.80%
+Model: Epoch 8, loss 0.3814, val loss 0.6728, train acc 93.60%, val acc 63.20%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 9, loss 0.3205, val loss 0.6124, train acc 94.88%, val acc 64.80%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 10, loss 0.2296, val loss 0.5798, train acc 97.87%, val acc 66.40%
+Model: Epoch 11, loss 0.2567, val loss 0.5912, train acc 98.72%, val acc 68.00%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 12, loss 0.2186, val loss 0.6166, train acc 98.44%, val acc 67.20%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 13, loss 0.1700, val loss 0.5978, train acc 98.58%, val acc 68.80%
+EarlyStopping counter: 3 out of 15
+Model: Epoch 14, loss 0.1769, val loss 0.5907, train acc 99.72%, val acc 67.20%
+EarlyStopping counter: 4 out of 15
+Model: Epoch 15, loss 0.1294, val loss 0.6036, train acc 99.86%, val acc 68.80%
+EarlyStopping counter: 5 out of 15
+Model: Epoch 16, loss 0.1626, val loss 0.6147, train acc 99.57%, val acc 68.00%
+EarlyStopping counter: 6 out of 15
+Model: Epoch 17, loss 0.1159, val loss 0.6043, train acc 99.86%, val acc 68.80%
+EarlyStopping counter: 7 out of 15
+Model: Epoch 18, loss 0.1023, val loss 0.6062, train acc 99.86%, val acc 68.80%
+EarlyStopping counter: 8 out of 15
+Model: Epoch 19, loss 0.0967, val loss 0.6215, train acc 99.86%, val acc 68.00%
+EarlyStopping counter: 9 out of 15
+Model: Epoch 20, loss 0.1047, val loss 0.6304, train acc 99.86%, val acc 68.00%
+EarlyStopping counter: 10 out of 15
+Model: Epoch 21, loss 0.0958, val loss 0.6223, train acc 99.86%, val acc 68.00%
+EarlyStopping counter: 11 out of 15
+Model: Epoch 22, loss 0.0920, val loss 0.6289, train acc 100.00%, val acc 68.00%
+EarlyStopping counter: 12 out of 15
+Model: Epoch 23, loss 0.0763, val loss 0.6391, train acc 100.00%, val acc 68.80%
+EarlyStopping counter: 13 out of 15
+Model: Epoch 24, loss 0.0753, val loss 0.6378, train acc 100.00%, val acc 68.00%
+EarlyStopping counter: 14 out of 15
+Model: Epoch 25, loss 0.0720, val loss 0.6433, train acc 100.00%, val acc 68.80%
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 25
+======================================
+Fine tuned model
+======================================
+======================================
+Testing Model
+======================================
+Fold 3 Results:
+Accuracy: 68.12%
+Sensitivity: 0.6415
+Specificity: 0.7228
+Precision: 0.7083
+F1_Score: 0.6733
+Confusion Matrix:
+[[68 28]
+ [38 73]]
+======================================
+Split 4
+======================================
+RFE selected 1000 features out of 6670
+Total:  1035
+Train:  703
+Test:  207
+Validation:  125
+AE 1: Epoch 0, loss 209.9990, validation loss 217.9963
+AE 1: Epoch 1, loss 198.5236, validation loss 240.7045
+EarlyStopping counter: 1 out of 10
+AE 1: Epoch 2, loss 188.4624, validation loss 263.2243
+EarlyStopping counter: 2 out of 10
+AE 1: Epoch 3, loss 182.1508, validation loss 284.5184
+EarlyStopping counter: 3 out of 10
+AE 1: Epoch 4, loss 191.1996, validation loss 305.6508
+EarlyStopping counter: 4 out of 10
+AE 1: Epoch 5, loss 159.5356, validation loss 324.7120
+EarlyStopping counter: 5 out of 10
+AE 1: Epoch 6, loss 160.0424, validation loss 343.6195
+EarlyStopping counter: 6 out of 10
+AE 1: Epoch 7, loss 141.1432, validation loss 359.9024
+EarlyStopping counter: 7 out of 10
+AE 1: Epoch 8, loss 150.6562, validation loss 373.4932
+EarlyStopping counter: 8 out of 10
+AE 1: Epoch 9, loss 118.3508, validation loss 384.9006
+EarlyStopping counter: 9 out of 10
+AE 1: Epoch 10, loss 143.8577, validation loss 394.4399
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 1
+======================================
+AE 2: Epoch 0, loss 3.6706, validation loss 2.4850
+AE 2: Epoch 1, loss 1.6539, validation loss 16.6763
+EarlyStopping counter: 1 out of 10
+AE 2: Epoch 2, loss 2.9648, validation loss 20.4761
+EarlyStopping counter: 2 out of 10
+AE 2: Epoch 3, loss 1.3561, validation loss 14.4159
+EarlyStopping counter: 3 out of 10
+AE 2: Epoch 4, loss 0.6578, validation loss 7.3648
+EarlyStopping counter: 4 out of 10
+AE 2: Epoch 5, loss 0.2734, validation loss 3.9604
+EarlyStopping counter: 5 out of 10
+AE 2: Epoch 6, loss 0.3337, validation loss 4.0274
+EarlyStopping counter: 6 out of 10
+AE 2: Epoch 7, loss 0.3390, validation loss 5.3613
+EarlyStopping counter: 7 out of 10
+AE 2: Epoch 8, loss 0.1537, validation loss 6.5540
+EarlyStopping counter: 8 out of 10
+AE 2: Epoch 9, loss 0.3416, validation loss 6.6020
+EarlyStopping counter: 9 out of 10
+AE 2: Epoch 10, loss 0.1416, validation loss 5.6377
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 2
+======================================
+Classifier: Epoch 0, loss 0.6968, validation loss 0.6941
+Classifier: Epoch 1, loss 0.6931, validation loss 0.6931
+Classifier: Epoch 2, loss 0.6968, validation loss 0.6935
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 3, loss 0.6934, validation loss 0.6934
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 4, loss 0.6975, validation loss 0.6935
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 5, loss 0.6938, validation loss 0.6936
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 6, loss 0.6934, validation loss 0.6936
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 7, loss 0.6937, validation loss 0.6933
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 8, loss 0.6943, validation loss 0.6931
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 9, loss 0.6944, validation loss 0.6931
+Classifier: Epoch 10, loss 0.6974, validation loss 0.6923
+Classifier: Epoch 11, loss 0.6921, validation loss 0.6924
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 12, loss 0.6938, validation loss 0.6920
+Classifier: Epoch 13, loss 0.6912, validation loss 0.6924
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 14, loss 0.6929, validation loss 0.6920
+Classifier: Epoch 15, loss 0.6916, validation loss 0.6923
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 16, loss 0.6911, validation loss 0.6923
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 17, loss 0.6907, validation loss 0.6918
+Classifier: Epoch 18, loss 0.6972, validation loss 0.6911
+Classifier: Epoch 19, loss 0.6913, validation loss 0.6915
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 20, loss 0.6900, validation loss 0.6919
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 21, loss 0.6894, validation loss 0.6918
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 22, loss 0.6900, validation loss 0.6910
+Classifier: Epoch 23, loss 0.6862, validation loss 0.6906
+Classifier: Epoch 24, loss 0.6905, validation loss 0.6909
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 25, loss 0.6893, validation loss 0.6909
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 26, loss 0.6948, validation loss 0.6905
+Classifier: Epoch 27, loss 0.6883, validation loss 0.6909
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 28, loss 0.6896, validation loss 0.6906
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 29, loss 0.6886, validation loss 0.6903
+Classifier: Epoch 30, loss 0.6871, validation loss 0.6903
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 31, loss 0.6878, validation loss 0.6901
+Classifier: Epoch 32, loss 0.6879, validation loss 0.6903
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 33, loss 0.6892, validation loss 0.6908
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 34, loss 0.6837, validation loss 0.6909
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 35, loss 0.6866, validation loss 0.6902
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 36, loss 0.6920, validation loss 0.6903
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 37, loss 0.6856, validation loss 0.6891
+Classifier: Epoch 38, loss 0.7012, validation loss 0.6886
+Classifier: Epoch 39, loss 0.6855, validation loss 0.6907
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 40, loss 0.6854, validation loss 0.6904
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 41, loss 0.6918, validation loss 0.6899
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 42, loss 0.6881, validation loss 0.6896
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 43, loss 0.6915, validation loss 0.6900
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 44, loss 0.6828, validation loss 0.6893
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 45, loss 0.6914, validation loss 0.6889
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 46, loss 0.6877, validation loss 0.6892
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 47, loss 0.6852, validation loss 0.6906
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 48, loss 0.6827, validation loss 0.6901
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 49, loss 0.6882, validation loss 0.6890
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 50, loss 0.6874, validation loss 0.6897
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 51, loss 0.6856, validation loss 0.6906
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 52, loss 0.6846, validation loss 0.6889
+EarlyStopping counter: 14 out of 15
+Classifier: Epoch 53, loss 0.6788, validation loss 0.6884
+Classifier: Epoch 54, loss 0.6855, validation loss 0.6884
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 55, loss 0.6877, validation loss 0.6888
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 56, loss 0.6809, validation loss 0.6892
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 57, loss 0.6868, validation loss 0.6902
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 58, loss 0.6925, validation loss 0.6894
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 59, loss 0.6844, validation loss 0.6897
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 60, loss 0.6932, validation loss 0.6885
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 61, loss 0.6798, validation loss 0.6885
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 62, loss 0.6867, validation loss 0.6889
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 63, loss 0.6769, validation loss 0.6894
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 64, loss 0.6789, validation loss 0.6901
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 65, loss 0.6840, validation loss 0.6884
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 66, loss 0.6805, validation loss 0.6878
+Classifier: Epoch 67, loss 0.6784, validation loss 0.6873
+Classifier: Epoch 68, loss 0.6817, validation loss 0.6885
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 69, loss 0.6856, validation loss 0.6887
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 70, loss 0.6878, validation loss 0.6903
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 71, loss 0.6847, validation loss 0.6899
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 72, loss 0.6852, validation loss 0.6887
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 73, loss 0.6856, validation loss 0.6884
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 74, loss 0.6794, validation loss 0.6890
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 75, loss 0.6850, validation loss 0.6883
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 76, loss 0.6849, validation loss 0.6889
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 77, loss 0.6938, validation loss 0.6889
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 78, loss 0.6684, validation loss 0.6900
+EarlyStopping counter: 11 out of 15
+Classifier: Epoch 79, loss 0.6730, validation loss 0.6889
+EarlyStopping counter: 12 out of 15
+Classifier: Epoch 80, loss 0.6980, validation loss 0.6881
+EarlyStopping counter: 13 out of 15
+Classifier: Epoch 81, loss 0.6848, validation loss 0.6877
+EarlyStopping counter: 14 out of 15
+Classifier: Epoch 82, loss 0.6874, validation loss 0.6881
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 82
+======================================
+Trained classifier
+======================================
+Model: Epoch 0, loss 0.9004, val loss 1.1907, train acc 58.32%, val acc 58.40%
+Model: Epoch 1, loss 0.5568, val loss 0.8380, train acc 70.13%, val acc 60.00%
+Model: Epoch 2, loss 0.5928, val loss 0.7174, train acc 69.70%, val acc 60.80%
+Model: Epoch 3, loss 0.4430, val loss 0.6915, train acc 84.50%, val acc 66.40%
+Model: Epoch 4, loss 0.4379, val loss 0.7180, train acc 87.06%, val acc 68.00%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 5, loss 0.2810, val loss 0.6976, train acc 93.60%, val acc 65.60%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 6, loss 0.2218, val loss 0.7233, train acc 95.16%, val acc 62.40%
+EarlyStopping counter: 3 out of 15
+Model: Epoch 7, loss 0.2050, val loss 0.7533, train acc 96.87%, val acc 64.80%
+EarlyStopping counter: 4 out of 15
+Model: Epoch 8, loss 0.2102, val loss 0.7818, train acc 98.44%, val acc 64.00%
+EarlyStopping counter: 5 out of 15
+Model: Epoch 9, loss 0.1451, val loss 0.7788, train acc 98.86%, val acc 64.80%
+EarlyStopping counter: 6 out of 15
+Model: Epoch 10, loss 0.1191, val loss 0.8008, train acc 99.86%, val acc 64.80%
+EarlyStopping counter: 7 out of 15
+Model: Epoch 11, loss 0.1185, val loss 0.8317, train acc 100.00%, val acc 65.60%
+EarlyStopping counter: 8 out of 15
+Model: Epoch 12, loss 0.0838, val loss 0.8621, train acc 100.00%, val acc 65.60%
+EarlyStopping counter: 9 out of 15
+Model: Epoch 13, loss 0.0831, val loss 0.8898, train acc 100.00%, val acc 65.60%
+EarlyStopping counter: 10 out of 15
+Model: Epoch 14, loss 0.0727, val loss 0.9205, train acc 100.00%, val acc 65.60%
+EarlyStopping counter: 11 out of 15
+Model: Epoch 15, loss 0.0561, val loss 0.9511, train acc 100.00%, val acc 64.80%
+EarlyStopping counter: 12 out of 15
+Model: Epoch 16, loss 0.0606, val loss 0.9758, train acc 100.00%, val acc 64.80%
+EarlyStopping counter: 13 out of 15
+Model: Epoch 17, loss 0.0539, val loss 0.9994, train acc 100.00%, val acc 64.00%
+EarlyStopping counter: 14 out of 15
+Model: Epoch 18, loss 0.0458, val loss 1.0224, train acc 100.00%, val acc 64.00%
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 18
+======================================
+Fine tuned model
+======================================
+======================================
+Testing Model
+======================================
+Fold 4 Results:
+Accuracy: 64.73%
+Sensitivity: 0.7075
+Specificity: 0.5842
+Precision: 0.6410
+F1_Score: 0.6726
+Confusion Matrix:
+[[75 42]
+ [31 59]]
+======================================
+Split 5
+======================================
+RFE selected 1000 features out of 6670
+Total:  1035
+Train:  703
+Test:  207
+Validation:  125
+AE 1: Epoch 0, loss 204.4910, validation loss 215.8531
+AE 1: Epoch 1, loss 186.5128, validation loss 239.8877
+EarlyStopping counter: 1 out of 10
+AE 1: Epoch 2, loss 194.4990, validation loss 265.1707
+EarlyStopping counter: 2 out of 10
+AE 1: Epoch 3, loss 180.6238, validation loss 287.7698
+EarlyStopping counter: 3 out of 10
+AE 1: Epoch 4, loss 169.6455, validation loss 310.7674
+EarlyStopping counter: 4 out of 10
+AE 1: Epoch 5, loss 161.0385, validation loss 333.0685
+EarlyStopping counter: 5 out of 10
+AE 1: Epoch 6, loss 163.4110, validation loss 355.3685
+EarlyStopping counter: 6 out of 10
+AE 1: Epoch 7, loss 151.6099, validation loss 375.8548
+EarlyStopping counter: 7 out of 10
+AE 1: Epoch 8, loss 129.9965, validation loss 395.3254
+EarlyStopping counter: 8 out of 10
+AE 1: Epoch 9, loss 152.2403, validation loss 411.7252
+EarlyStopping counter: 9 out of 10
+AE 1: Epoch 10, loss 161.5988, validation loss 426.9102
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 1
+======================================
+AE 2: Epoch 0, loss 3.6982, validation loss 3.4047
+AE 2: Epoch 1, loss 1.1082, validation loss 20.1379
+EarlyStopping counter: 1 out of 10
+AE 2: Epoch 2, loss 3.9459, validation loss 23.0040
+EarlyStopping counter: 2 out of 10
+AE 2: Epoch 3, loss 1.5055, validation loss 13.9984
+EarlyStopping counter: 3 out of 10
+AE 2: Epoch 4, loss 0.5499, validation loss 6.1848
+EarlyStopping counter: 4 out of 10
+AE 2: Epoch 5, loss 0.2414, validation loss 3.9769
+EarlyStopping counter: 5 out of 10
+AE 2: Epoch 6, loss 0.2599, validation loss 5.1659
+EarlyStopping counter: 6 out of 10
+AE 2: Epoch 7, loss 0.1839, validation loss 6.5414
+EarlyStopping counter: 7 out of 10
+AE 2: Epoch 8, loss 0.1306, validation loss 6.9993
+EarlyStopping counter: 8 out of 10
+AE 2: Epoch 9, loss 0.1091, validation loss 6.8623
+EarlyStopping counter: 9 out of 10
+AE 2: Epoch 10, loss 0.1227, validation loss 6.5467
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 10
+======================================
+Trained AE 2
+======================================
+Classifier: Epoch 0, loss 0.6946, validation loss 0.6914
+Classifier: Epoch 1, loss 0.6902, validation loss 0.6909
+Classifier: Epoch 2, loss 0.6935, validation loss 0.6908
+Classifier: Epoch 3, loss 0.6875, validation loss 0.6907
+Classifier: Epoch 4, loss 0.6953, validation loss 0.6908
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 5, loss 0.6905, validation loss 0.6910
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 6, loss 0.6912, validation loss 0.6912
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 7, loss 0.6847, validation loss 0.6910
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 8, loss 0.7005, validation loss 0.6906
+Classifier: Epoch 9, loss 0.6968, validation loss 0.6906
+Classifier: Epoch 10, loss 0.6904, validation loss 0.6907
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 11, loss 0.6891, validation loss 0.6908
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 12, loss 0.6970, validation loss 0.6907
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 13, loss 0.6921, validation loss 0.6908
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 14, loss 0.6923, validation loss 0.6909
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 15, loss 0.6934, validation loss 0.6908
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 16, loss 0.7005, validation loss 0.6907
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 17, loss 0.6886, validation loss 0.6909
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 18, loss 0.6934, validation loss 0.6906
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 19, loss 0.6862, validation loss 0.6904
+Classifier: Epoch 20, loss 0.6848, validation loss 0.6904
+Classifier: Epoch 21, loss 0.6934, validation loss 0.6903
+Classifier: Epoch 22, loss 0.6862, validation loss 0.6903
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 23, loss 0.6939, validation loss 0.6905
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 24, loss 0.6903, validation loss 0.6905
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 25, loss 0.6888, validation loss 0.6902
+Classifier: Epoch 26, loss 0.6990, validation loss 0.6901
+Classifier: Epoch 27, loss 0.6894, validation loss 0.6902
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 28, loss 0.6861, validation loss 0.6904
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 29, loss 0.6940, validation loss 0.6901
+Classifier: Epoch 30, loss 0.6853, validation loss 0.6902
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 31, loss 0.6876, validation loss 0.6900
+Classifier: Epoch 32, loss 0.6831, validation loss 0.6900
+Classifier: Epoch 33, loss 0.6896, validation loss 0.6900
+Classifier: Epoch 34, loss 0.6966, validation loss 0.6899
+Classifier: Epoch 35, loss 0.6910, validation loss 0.6901
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 36, loss 0.6900, validation loss 0.6903
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 37, loss 0.6883, validation loss 0.6902
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 38, loss 0.6847, validation loss 0.6901
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 39, loss 0.6927, validation loss 0.6899
+Classifier: Epoch 40, loss 0.6966, validation loss 0.6898
+Classifier: Epoch 41, loss 0.6918, validation loss 0.6899
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 42, loss 0.6941, validation loss 0.6899
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 43, loss 0.6984, validation loss 0.6899
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 44, loss 0.6895, validation loss 0.6903
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 45, loss 0.6902, validation loss 0.6898
+Classifier: Epoch 46, loss 0.6975, validation loss 0.6896
+Classifier: Epoch 47, loss 0.6931, validation loss 0.6896
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 48, loss 0.6850, validation loss 0.6898
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 49, loss 0.6859, validation loss 0.6897
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 50, loss 0.6915, validation loss 0.6896
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 51, loss 0.6900, validation loss 0.6895
+Classifier: Epoch 52, loss 0.6966, validation loss 0.6896
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 53, loss 0.6842, validation loss 0.6897
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 54, loss 0.6911, validation loss 0.6896
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 55, loss 0.6816, validation loss 0.6895
+Classifier: Epoch 56, loss 0.7010, validation loss 0.6893
+Classifier: Epoch 57, loss 0.6953, validation loss 0.6895
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 58, loss 0.6919, validation loss 0.6896
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 59, loss 0.6879, validation loss 0.6896
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 60, loss 0.6940, validation loss 0.6893
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 61, loss 0.6930, validation loss 0.6894
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 62, loss 0.6830, validation loss 0.6893
+Classifier: Epoch 63, loss 0.6858, validation loss 0.6894
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 64, loss 0.6810, validation loss 0.6892
+Classifier: Epoch 65, loss 0.6935, validation loss 0.6891
+Classifier: Epoch 66, loss 0.6870, validation loss 0.6892
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 67, loss 0.6948, validation loss 0.6892
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 68, loss 0.6847, validation loss 0.6895
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 69, loss 0.6858, validation loss 0.6892
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 70, loss 0.6893, validation loss 0.6890
+Classifier: Epoch 71, loss 0.7016, validation loss 0.6890
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 72, loss 0.6871, validation loss 0.6895
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 73, loss 0.6939, validation loss 0.6891
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 74, loss 0.6994, validation loss 0.6889
+Classifier: Epoch 75, loss 0.6858, validation loss 0.6892
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 76, loss 0.6919, validation loss 0.6890
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 77, loss 0.6886, validation loss 0.6891
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 78, loss 0.6886, validation loss 0.6891
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 79, loss 0.6967, validation loss 0.6889
+Classifier: Epoch 80, loss 0.6893, validation loss 0.6889
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 81, loss 0.6843, validation loss 0.6890
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 82, loss 0.6926, validation loss 0.6889
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 83, loss 0.6928, validation loss 0.6889
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 84, loss 0.6911, validation loss 0.6891
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 85, loss 0.6930, validation loss 0.6889
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 86, loss 0.6938, validation loss 0.6890
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 87, loss 0.6884, validation loss 0.6889
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 88, loss 0.7056, validation loss 0.6886
+Classifier: Epoch 89, loss 0.6833, validation loss 0.6888
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 90, loss 0.6892, validation loss 0.6889
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 91, loss 0.6967, validation loss 0.6886
+Classifier: Epoch 92, loss 0.6877, validation loss 0.6888
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 93, loss 0.6855, validation loss 0.6885
+Classifier: Epoch 94, loss 0.6893, validation loss 0.6883
+Classifier: Epoch 95, loss 0.6986, validation loss 0.6885
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 96, loss 0.6856, validation loss 0.6888
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 97, loss 0.6890, validation loss 0.6886
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 98, loss 0.6825, validation loss 0.6885
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 99, loss 0.6944, validation loss 0.6883
+Classifier: Epoch 100, loss 0.6910, validation loss 0.6883
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 101, loss 0.6937, validation loss 0.6883
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 102, loss 0.6819, validation loss 0.6885
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 103, loss 0.6899, validation loss 0.6884
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 104, loss 0.6893, validation loss 0.6882
+Classifier: Epoch 105, loss 0.6927, validation loss 0.6884
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 106, loss 0.6875, validation loss 0.6883
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 107, loss 0.6876, validation loss 0.6881
+Classifier: Epoch 108, loss 0.7065, validation loss 0.6880
+Classifier: Epoch 109, loss 0.6798, validation loss 0.6882
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 110, loss 0.6854, validation loss 0.6883
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 111, loss 0.6870, validation loss 0.6884
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 112, loss 0.6834, validation loss 0.6883
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 113, loss 0.6962, validation loss 0.6879
+Classifier: Epoch 114, loss 0.6840, validation loss 0.6881
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 115, loss 0.6938, validation loss 0.6879
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 116, loss 0.6817, validation loss 0.6882
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 117, loss 0.6885, validation loss 0.6881
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 118, loss 0.6870, validation loss 0.6882
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 119, loss 0.6881, validation loss 0.6878
+Classifier: Epoch 120, loss 0.6878, validation loss 0.6877
+Classifier: Epoch 121, loss 0.6832, validation loss 0.6879
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 122, loss 0.6857, validation loss 0.6878
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 123, loss 0.6858, validation loss 0.6879
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 124, loss 0.6899, validation loss 0.6877
+Classifier: Epoch 125, loss 0.6818, validation loss 0.6878
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 126, loss 0.6830, validation loss 0.6878
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 127, loss 0.6954, validation loss 0.6877
+Classifier: Epoch 128, loss 0.6807, validation loss 0.6878
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 129, loss 0.6890, validation loss 0.6878
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 130, loss 0.6882, validation loss 0.6876
+Classifier: Epoch 131, loss 0.6917, validation loss 0.6876
+Classifier: Epoch 132, loss 0.6829, validation loss 0.6876
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 133, loss 0.6869, validation loss 0.6876
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 134, loss 0.6870, validation loss 0.6875
+Classifier: Epoch 135, loss 0.6837, validation loss 0.6874
+Classifier: Epoch 136, loss 0.6906, validation loss 0.6875
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 137, loss 0.6860, validation loss 0.6876
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 138, loss 0.6840, validation loss 0.6875
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 139, loss 0.6828, validation loss 0.6873
+Classifier: Epoch 140, loss 0.6894, validation loss 0.6873
+Classifier: Epoch 141, loss 0.6824, validation loss 0.6874
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 142, loss 0.6854, validation loss 0.6872
+Classifier: Epoch 143, loss 0.6837, validation loss 0.6873
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 144, loss 0.6879, validation loss 0.6873
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 145, loss 0.6837, validation loss 0.6872
+Classifier: Epoch 146, loss 0.6894, validation loss 0.6874
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 147, loss 0.6883, validation loss 0.6876
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 148, loss 0.6895, validation loss 0.6873
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 149, loss 0.6926, validation loss 0.6871
+Classifier: Epoch 150, loss 0.6851, validation loss 0.6873
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 151, loss 0.6907, validation loss 0.6872
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 152, loss 0.6857, validation loss 0.6871
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 153, loss 0.6804, validation loss 0.6872
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 154, loss 0.6864, validation loss 0.6870
+Classifier: Epoch 155, loss 0.6842, validation loss 0.6869
+Classifier: Epoch 156, loss 0.6948, validation loss 0.6869
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 157, loss 0.6881, validation loss 0.6873
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 158, loss 0.6826, validation loss 0.6873
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 159, loss 0.6850, validation loss 0.6869
+Classifier: Epoch 160, loss 0.6997, validation loss 0.6868
+Classifier: Epoch 161, loss 0.6871, validation loss 0.6869
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 162, loss 0.6911, validation loss 0.6873
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 163, loss 0.6887, validation loss 0.6869
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 164, loss 0.6931, validation loss 0.6868
+Classifier: Epoch 165, loss 0.6845, validation loss 0.6868
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 166, loss 0.6779, validation loss 0.6867
+Classifier: Epoch 167, loss 0.6788, validation loss 0.6867
+Classifier: Epoch 168, loss 0.6841, validation loss 0.6867
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 169, loss 0.6835, validation loss 0.6867
+Classifier: Epoch 170, loss 0.6905, validation loss 0.6865
+Classifier: Epoch 171, loss 0.6741, validation loss 0.6866
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 172, loss 0.6926, validation loss 0.6865
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 173, loss 0.6820, validation loss 0.6865
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 174, loss 0.6977, validation loss 0.6864
+Classifier: Epoch 175, loss 0.6803, validation loss 0.6868
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 176, loss 0.6934, validation loss 0.6867
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 177, loss 0.6887, validation loss 0.6867
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 178, loss 0.6793, validation loss 0.6867
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 179, loss 0.6912, validation loss 0.6865
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 180, loss 0.6885, validation loss 0.6864
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 181, loss 0.6842, validation loss 0.6864
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 182, loss 0.6994, validation loss 0.6862
+Classifier: Epoch 183, loss 0.6893, validation loss 0.6866
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 184, loss 0.6837, validation loss 0.6864
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 185, loss 0.6823, validation loss 0.6862
+Classifier: Epoch 186, loss 0.6797, validation loss 0.6861
+Classifier: Epoch 187, loss 0.6785, validation loss 0.6862
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 188, loss 0.6964, validation loss 0.6860
+Classifier: Epoch 189, loss 0.6782, validation loss 0.6861
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 190, loss 0.6847, validation loss 0.6860
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 191, loss 0.7018, validation loss 0.6859
+Classifier: Epoch 192, loss 0.6805, validation loss 0.6863
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 193, loss 0.6808, validation loss 0.6863
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 194, loss 0.6805, validation loss 0.6863
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 195, loss 0.6890, validation loss 0.6862
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 196, loss 0.6870, validation loss 0.6862
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 197, loss 0.6760, validation loss 0.6861
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 198, loss 0.6883, validation loss 0.6859
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 199, loss 0.6762, validation loss 0.6858
+Classifier: Epoch 200, loss 0.6909, validation loss 0.6858
+Classifier: Epoch 201, loss 0.6779, validation loss 0.6860
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 202, loss 0.6822, validation loss 0.6858
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 203, loss 0.6955, validation loss 0.6857
+Classifier: Epoch 204, loss 0.6779, validation loss 0.6858
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 205, loss 0.6816, validation loss 0.6859
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 206, loss 0.6791, validation loss 0.6858
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 207, loss 0.6894, validation loss 0.6858
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 208, loss 0.6831, validation loss 0.6855
+Classifier: Epoch 209, loss 0.6812, validation loss 0.6855
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 210, loss 0.6764, validation loss 0.6857
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 211, loss 0.6789, validation loss 0.6857
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 212, loss 0.6743, validation loss 0.6856
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 213, loss 0.6884, validation loss 0.6853
+Classifier: Epoch 214, loss 0.6810, validation loss 0.6855
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 215, loss 0.6803, validation loss 0.6854
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 216, loss 0.6854, validation loss 0.6855
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 217, loss 0.6829, validation loss 0.6857
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 218, loss 0.6872, validation loss 0.6856
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 219, loss 0.6847, validation loss 0.6856
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 220, loss 0.6936, validation loss 0.6854
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 221, loss 0.6894, validation loss 0.6855
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 222, loss 0.6844, validation loss 0.6859
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 223, loss 0.6798, validation loss 0.6858
+EarlyStopping counter: 10 out of 15
+Classifier: Epoch 224, loss 0.6785, validation loss 0.6852
+Classifier: Epoch 225, loss 0.6939, validation loss 0.6850
+Classifier: Epoch 226, loss 0.6712, validation loss 0.6852
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 227, loss 0.6852, validation loss 0.6851
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 228, loss 0.6816, validation loss 0.6855
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 229, loss 0.6870, validation loss 0.6852
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 230, loss 0.6825, validation loss 0.6852
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 231, loss 0.6854, validation loss 0.6849
+Classifier: Epoch 232, loss 0.6860, validation loss 0.6848
+Classifier: Epoch 233, loss 0.6821, validation loss 0.6851
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 234, loss 0.6810, validation loss 0.6856
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 235, loss 0.6892, validation loss 0.6852
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 236, loss 0.6818, validation loss 0.6848
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 237, loss 0.6883, validation loss 0.6848
+Classifier: Epoch 238, loss 0.6854, validation loss 0.6850
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 239, loss 0.6899, validation loss 0.6854
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 240, loss 0.6838, validation loss 0.6853
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 241, loss 0.6744, validation loss 0.6853
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 242, loss 0.6937, validation loss 0.6846
+Classifier: Epoch 243, loss 0.6854, validation loss 0.6845
+Classifier: Epoch 244, loss 0.6740, validation loss 0.6848
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 245, loss 0.6784, validation loss 0.6848
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 246, loss 0.6809, validation loss 0.6847
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 247, loss 0.6736, validation loss 0.6846
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 248, loss 0.6884, validation loss 0.6845
+Classifier: Epoch 249, loss 0.6837, validation loss 0.6845
+Classifier: Epoch 250, loss 0.6918, validation loss 0.6846
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 251, loss 0.6707, validation loss 0.6850
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 252, loss 0.6734, validation loss 0.6849
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 253, loss 0.6873, validation loss 0.6845
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 254, loss 0.6787, validation loss 0.6844
+Classifier: Epoch 255, loss 0.7000, validation loss 0.6844
+Classifier: Epoch 256, loss 0.6746, validation loss 0.6849
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 257, loss 0.6840, validation loss 0.6848
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 258, loss 0.6928, validation loss 0.6846
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 259, loss 0.6876, validation loss 0.6848
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 260, loss 0.6798, validation loss 0.6850
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 261, loss 0.6797, validation loss 0.6845
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 262, loss 0.6882, validation loss 0.6842
+Classifier: Epoch 263, loss 0.6795, validation loss 0.6844
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 264, loss 0.6944, validation loss 0.6845
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 265, loss 0.6860, validation loss 0.6848
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 266, loss 0.6852, validation loss 0.6848
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 267, loss 0.6873, validation loss 0.6845
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 268, loss 0.6743, validation loss 0.6845
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 269, loss 0.6958, validation loss 0.6843
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 270, loss 0.6860, validation loss 0.6843
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 271, loss 0.6794, validation loss 0.6844
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 272, loss 0.6830, validation loss 0.6841
+Classifier: Epoch 273, loss 0.6720, validation loss 0.6842
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 274, loss 0.6858, validation loss 0.6840
+Classifier: Epoch 275, loss 0.6788, validation loss 0.6842
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 276, loss 0.6775, validation loss 0.6845
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 277, loss 0.6805, validation loss 0.6842
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 278, loss 0.6851, validation loss 0.6840
+Classifier: Epoch 279, loss 0.6913, validation loss 0.6840
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 280, loss 0.6778, validation loss 0.6842
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 281, loss 0.6823, validation loss 0.6840
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 282, loss 0.6762, validation loss 0.6839
+Classifier: Epoch 283, loss 0.6794, validation loss 0.6838
+Classifier: Epoch 284, loss 0.6908, validation loss 0.6839
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 285, loss 0.6912, validation loss 0.6840
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 286, loss 0.6863, validation loss 0.6841
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 287, loss 0.6791, validation loss 0.6844
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 288, loss 0.6804, validation loss 0.6840
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 289, loss 0.6820, validation loss 0.6839
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 290, loss 0.6850, validation loss 0.6838
+Classifier: Epoch 291, loss 0.6810, validation loss 0.6839
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 292, loss 0.6885, validation loss 0.6838
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 293, loss 0.6774, validation loss 0.6840
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 294, loss 0.6799, validation loss 0.6837
+Classifier: Epoch 295, loss 0.6823, validation loss 0.6835
+Classifier: Epoch 296, loss 0.6746, validation loss 0.6836
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 297, loss 0.6856, validation loss 0.6839
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 298, loss 0.6730, validation loss 0.6841
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 299, loss 0.6799, validation loss 0.6838
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 300, loss 0.6829, validation loss 0.6835
+Classifier: Epoch 301, loss 0.6878, validation loss 0.6833
+Classifier: Epoch 302, loss 0.6834, validation loss 0.6834
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 303, loss 0.6827, validation loss 0.6836
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 304, loss 0.6736, validation loss 0.6838
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 305, loss 0.6858, validation loss 0.6838
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 306, loss 0.6738, validation loss 0.6834
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 307, loss 0.6863, validation loss 0.6833
+Classifier: Epoch 308, loss 0.6681, validation loss 0.6834
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 309, loss 0.6836, validation loss 0.6834
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 310, loss 0.6788, validation loss 0.6835
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 311, loss 0.6801, validation loss 0.6837
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 312, loss 0.6823, validation loss 0.6838
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 313, loss 0.6735, validation loss 0.6834
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 314, loss 0.6780, validation loss 0.6833
+Classifier: Epoch 315, loss 0.6759, validation loss 0.6833
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 316, loss 0.6721, validation loss 0.6834
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 317, loss 0.6797, validation loss 0.6832
+Classifier: Epoch 318, loss 0.6809, validation loss 0.6831
+Classifier: Epoch 319, loss 0.6906, validation loss 0.6834
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 320, loss 0.6787, validation loss 0.6835
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 321, loss 0.6686, validation loss 0.6832
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 322, loss 0.6792, validation loss 0.6830
+Classifier: Epoch 323, loss 0.6764, validation loss 0.6829
+Classifier: Epoch 324, loss 0.6881, validation loss 0.6829
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 325, loss 0.6856, validation loss 0.6834
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 326, loss 0.6821, validation loss 0.6837
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 327, loss 0.6734, validation loss 0.6834
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 328, loss 0.6717, validation loss 0.6829
+Classifier: Epoch 329, loss 0.6794, validation loss 0.6827
+Classifier: Epoch 330, loss 0.6695, validation loss 0.6830
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 331, loss 0.6757, validation loss 0.6829
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 332, loss 0.6814, validation loss 0.6826
+Classifier: Epoch 333, loss 0.6866, validation loss 0.6827
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 334, loss 0.6754, validation loss 0.6830
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 335, loss 0.6789, validation loss 0.6833
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 336, loss 0.6907, validation loss 0.6835
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 337, loss 0.6831, validation loss 0.6831
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 338, loss 0.6820, validation loss 0.6827
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 339, loss 0.6711, validation loss 0.6826
+Classifier: Epoch 340, loss 0.6803, validation loss 0.6827
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 341, loss 0.6924, validation loss 0.6828
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 342, loss 0.6795, validation loss 0.6830
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 343, loss 0.6839, validation loss 0.6830
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 344, loss 0.6723, validation loss 0.6830
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 345, loss 0.6752, validation loss 0.6828
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 346, loss 0.6846, validation loss 0.6827
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 347, loss 0.6907, validation loss 0.6825
+Classifier: Epoch 348, loss 0.6852, validation loss 0.6828
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 349, loss 0.6675, validation loss 0.6825
+Classifier: Epoch 350, loss 0.6871, validation loss 0.6823
+Classifier: Epoch 351, loss 0.6886, validation loss 0.6825
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 352, loss 0.6767, validation loss 0.6829
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 353, loss 0.6783, validation loss 0.6827
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 354, loss 0.6758, validation loss 0.6826
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 355, loss 0.6798, validation loss 0.6823
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 356, loss 0.6800, validation loss 0.6825
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 357, loss 0.6726, validation loss 0.6827
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 358, loss 0.6734, validation loss 0.6824
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 359, loss 0.6725, validation loss 0.6822
+Classifier: Epoch 360, loss 0.6816, validation loss 0.6822
+Classifier: Epoch 361, loss 0.6804, validation loss 0.6822
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 362, loss 0.6719, validation loss 0.6825
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 363, loss 0.6747, validation loss 0.6823
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 364, loss 0.6835, validation loss 0.6822
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 365, loss 0.6862, validation loss 0.6822
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 366, loss 0.6809, validation loss 0.6821
+Classifier: Epoch 367, loss 0.6783, validation loss 0.6821
+Classifier: Epoch 368, loss 0.6806, validation loss 0.6822
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 369, loss 0.6853, validation loss 0.6823
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 370, loss 0.6797, validation loss 0.6823
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 371, loss 0.6726, validation loss 0.6823
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 372, loss 0.6735, validation loss 0.6822
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 373, loss 0.6828, validation loss 0.6821
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 374, loss 0.6678, validation loss 0.6820
+Classifier: Epoch 375, loss 0.6725, validation loss 0.6820
+Classifier: Epoch 376, loss 0.6835, validation loss 0.6820
+Classifier: Epoch 377, loss 0.6626, validation loss 0.6822
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 378, loss 0.6758, validation loss 0.6822
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 379, loss 0.6963, validation loss 0.6816
+Classifier: Epoch 380, loss 0.6728, validation loss 0.6819
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 381, loss 0.6722, validation loss 0.6818
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 382, loss 0.6786, validation loss 0.6820
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 383, loss 0.6837, validation loss 0.6817
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 384, loss 0.6677, validation loss 0.6818
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 385, loss 0.6869, validation loss 0.6819
+EarlyStopping counter: 6 out of 15
+Classifier: Epoch 386, loss 0.6813, validation loss 0.6820
+EarlyStopping counter: 7 out of 15
+Classifier: Epoch 387, loss 0.6743, validation loss 0.6819
+EarlyStopping counter: 8 out of 15
+Classifier: Epoch 388, loss 0.6805, validation loss 0.6818
+EarlyStopping counter: 9 out of 15
+Classifier: Epoch 389, loss 0.6707, validation loss 0.6815
+Classifier: Epoch 390, loss 0.6991, validation loss 0.6813
+Classifier: Epoch 391, loss 0.6761, validation loss 0.6817
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 392, loss 0.6761, validation loss 0.6822
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 393, loss 0.6770, validation loss 0.6822
+EarlyStopping counter: 3 out of 15
+Classifier: Epoch 394, loss 0.6743, validation loss 0.6814
+EarlyStopping counter: 4 out of 15
+Classifier: Epoch 395, loss 0.6723, validation loss 0.6813
+EarlyStopping counter: 5 out of 15
+Classifier: Epoch 396, loss 0.6963, validation loss 0.6813
+Classifier: Epoch 397, loss 0.6926, validation loss 0.6818
+EarlyStopping counter: 1 out of 15
+Classifier: Epoch 398, loss 0.6715, validation loss 0.6822
+EarlyStopping counter: 2 out of 15
+Classifier: Epoch 399, loss 0.6790, validation loss 0.6820
+EarlyStopping counter: 3 out of 15
+======================================
+Trained classifier
+======================================
+Model: Epoch 0, loss 0.6542, val loss 0.6714, train acc 66.57%, val acc 69.60%
+Model: Epoch 1, loss 0.4776, val loss 0.6334, train acc 79.09%, val acc 65.60%
+Model: Epoch 2, loss 0.2845, val loss 0.5914, train acc 86.49%, val acc 66.40%
+Model: Epoch 3, loss 0.2336, val loss 0.5630, train acc 94.88%, val acc 74.40%
+Model: Epoch 4, loss 0.1706, val loss 0.5905, train acc 97.72%, val acc 73.60%
+EarlyStopping counter: 1 out of 15
+Model: Epoch 5, loss 0.1015, val loss 0.5890, train acc 99.00%, val acc 72.80%
+EarlyStopping counter: 2 out of 15
+Model: Epoch 6, loss 0.0976, val loss 0.6131, train acc 99.72%, val acc 72.00%
+EarlyStopping counter: 3 out of 15
+Model: Epoch 7, loss 0.0569, val loss 0.6373, train acc 100.00%, val acc 72.00%
+EarlyStopping counter: 4 out of 15
+Model: Epoch 8, loss 0.0459, val loss 0.6494, train acc 100.00%, val acc 73.60%
+EarlyStopping counter: 5 out of 15
+Model: Epoch 9, loss 0.0389, val loss 0.6670, train acc 100.00%, val acc 74.40%
+EarlyStopping counter: 6 out of 15
+Model: Epoch 10, loss 0.0314, val loss 0.6857, train acc 100.00%, val acc 75.20%
+EarlyStopping counter: 7 out of 15
+Model: Epoch 11, loss 0.0241, val loss 0.7023, train acc 100.00%, val acc 75.20%
+EarlyStopping counter: 8 out of 15
+Model: Epoch 12, loss 0.0252, val loss 0.7181, train acc 100.00%, val acc 74.40%
+EarlyStopping counter: 9 out of 15
+Model: Epoch 13, loss 0.0185, val loss 0.7353, train acc 100.00%, val acc 74.40%
+EarlyStopping counter: 10 out of 15
+Model: Epoch 14, loss 0.0227, val loss 0.7517, train acc 100.00%, val acc 74.40%
+EarlyStopping counter: 11 out of 15
+Model: Epoch 15, loss 0.0159, val loss 0.7668, train acc 100.00%, val acc 75.20%
+EarlyStopping counter: 12 out of 15
+Model: Epoch 16, loss 0.0156, val loss 0.7807, train acc 100.00%, val acc 75.20%
+EarlyStopping counter: 13 out of 15
+Model: Epoch 17, loss 0.0144, val loss 0.7936, train acc 100.00%, val acc 74.40%
+EarlyStopping counter: 14 out of 15
+Model: Epoch 18, loss 0.0127, val loss 0.8067, train acc 100.00%, val acc 74.40%
+EarlyStopping counter: 15 out of 15
+Early stopping triggered at epoch 18
+======================================
+Fine tuned model
+======================================
+======================================
+Testing Model
+======================================
+Fold 5 Results:
+Accuracy: 62.80%
+Sensitivity: 0.6604
+Specificity: 0.5941
+Precision: 0.6306
+F1_Score: 0.6452
+Confusion Matrix:
+[[70 41]
+ [36 60]]
+======================================
+Completed All Folds
+======================================
+
+============================================================
+FINAL CROSS-VALIDATION RESULTS (Mean ± Std)
+============================================================
+Accuracy:    65.02% ± 2.51%
+Sensitivity: 0.6585 ± 0.0393
+Specificity: 0.6416 ± 0.0503
+Precision:   0.6597 ± 0.0304
+F1 Score:    0.6582 ± 0.0255
+
+Average Confusion Matrix:
+[[69.8 36.2]
+ [36.2 64.8]]
+============================================================
