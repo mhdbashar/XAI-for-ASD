@@ -4,15 +4,26 @@
 
 Early diagnosis and intervention for Autism Spectrum Disorder (ASD) has been shown to significantly improve the quality of life of autistic individuals. However, diagnostics methods for ASD rely on assessments based on clinical presentation that are prone to bias and can be challenging to arrive at an early diagnosis. There is a need for objective biomarkers of ASD which can help improve diagnostic accuracy. Deep learning (DL) has achieved outstanding performance in diagnosing diseases and conditions from medical imaging data. Extensive research has been conducted on creating models that classify ASD using resting-state functional Magnetic Resonance Imaging (fMRI) data. However, existing models lack interpretability. This research aims to improve the accuracy and interpretability of ASD diagnosis by creating a DL model that can not only accurately classify ASD but also provide explainable insights into its working. The dataset used is a preprocessed version of the Autism Brain Imaging Data Exchange (ABIDE) with 884 samples. Our findings show a model that can accurately classify ASD and highlight critical brain regions differing between ASD and typical controls, with potential implications for early diagnosis and understanding of the neural basis of ASD. These findings are validated by studies in the literature that use different datasets and modalities, confirming that the model actually learned characteristics of ASD and not just the dataset. This study advances the field of explainable AI in medical imaging by providing a robust and interpretable model, thereby contributing to a future with objective and reliable ASD diagnostics.
 
-#### Preprint
-
-https://arxiv.org/abs/2409.15374
-
 #### Paper
 
-The Lancet eClinicalMedicine, Aug 2025 - [DOI](https://doi.org/10.1016/j.eclinm.2025.103452)
+This repository contains the implementation of the following research paper:
 
-## Summary of changes
+Vidya, S., Gupta, K., Aly, A., Wills, A., Ifeachor, E., & Shankar, R. (2025). Identification of critical brain regions for autism diagnosis from fMRI data using explainable AI: an observational analysis of the ABIDE dataset. eClinicalMedicine, 88, 103452.
+DOI
+
+#### Preprint:
+https://arxiv.org/abs/2409.15374
+
+#### Reproducibility / Data Leakage Analysis
+
+This implementation was subsequently examined in the following reproducibility study:
+
+Disoki, M. B., & Sonbol, R. Inflated Performance in fMRI-Based ASD Diagnosis: A Reproducibility Study of Data Leakage in Feature Selection Pipelines. MICCAI 2026, Lecture Notes in Computer Science, vol. 16886, pp. 325–334. DOI (https://link.springer.com/chapter/10.1007/978-3-032-38098-2_31)
+
+The study specifically identifies this XAI-for-ASD codebase and investigates data leakage in its feature-selection pipeline. It reports that correcting the leakage reduced the reported accuracy from 97.68% to 65.02% ± 2.51%.
+
+This repository includes the corresponding corrections to the data-processing and evaluation pipeline. See Summary of changes below.
+## Reproducibility / Data Leakage Correction
 
 - 2026-02-27 — Commit 9af713d: "leak consider" — noted and considered potential data-leakage issues in preprocessing and model evaluation; follow-up review recommended.
 
